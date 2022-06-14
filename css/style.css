@@ -40,6 +40,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom, white, black);
 }
 
 .barraDeNavegacion {
@@ -61,12 +62,17 @@
 .barraDeNavegacion a:hover{
     color: rgb(221, 108, 3);
     font-family: "Comic Sans MS";
+    transition: .5s;
 }
 .barraDeNavegacion li:hover{
     background-color: black;
+    transition: .5s;
 }
 .logo {
     width: 100px;
+    animation-name: rotacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 /* MAIN */
 .main {
@@ -167,6 +173,30 @@
 .redesSociales li:hover{
     background-color: black;
 }
+/* ANIMACIONES */
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+    25%{
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+    50%{
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+    75%{
+        transform: rotate(270deg);
+        transition: .5s;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+}
+
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST */
 @media (max-width:425px) {
     .grilla {
