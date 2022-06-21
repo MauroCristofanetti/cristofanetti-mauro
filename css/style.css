@@ -169,9 +169,11 @@
 .redesSociales a:hover{
     color: rgb(221, 108, 3);
     font-family: "Comic Sans MS";
+    transition: .5s;
 }
 .redesSociales li:hover{
     background-color: black;
+    transition: .5s;
 }
 /* ANIMACIONES */
 @keyframes rotacion{
